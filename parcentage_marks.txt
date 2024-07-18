@@ -1,0 +1,55 @@
+import java.util.*;
+public class markspercentage {
+
+	public static void main(String args[]) {
+	    Scanner Scan=new Scanner(System.in);
+		System.out.println("enter the marks of mathematics");
+		int math=Scan.nextInt();
+		System.out.println("enter the marks of physics ");
+		int physics=Scan.nextInt();
+		System.out.println("enter the number of chemistry ");
+		int chem=Scan.nextInt();
+		System.out.println("enter the marks of computer ");
+		int comp=Scan.nextInt();
+		System.out.println("enter the marks of English ");
+		int eng=Scan.nextInt();
+        int total=math+physics+chem+comp+eng;
+		System.out.println("Total marks is " +total);
+		float percentage=total/5;
+		System.out.print("percentage is");
+        System.out.println(percentage);
+		if(total>=450)
+		{
+			System.out.println("Grade is A++");
+		}
+		else if(total>=400)
+		{
+			System.out.println("Grade is A");
+		}
+		else if(total>=350)
+		{
+			System.out.println("Grade is B++");
+		}
+		else if(total>=300)
+		{
+			System.out.println("Grade is B");
+		}
+		else if(total>=250)
+		{
+			System.out.println("Grade is C++");
+		}
+		else if(total>=200)
+		{
+			System.out.println("Grade is C");
+		}
+		else if(total>=150)
+		{
+			System.out.println("Grade is D");
+		}
+		else 
+		{
+			System.out.println("Grade is F");
+		}
+
+}
+}
